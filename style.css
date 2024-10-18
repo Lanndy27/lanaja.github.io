@@ -1,0 +1,351 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+  color: #007bff;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #007bff !important;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("img/pexels-eberhardgross-443446.jpg") no-repeat center center/cover;
+
+  color: rgb(26, 25, 25);
+  text-align: left;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin: 10px 0 20px;
+  opacity: 0.9;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-primary {
+  background-color: #007bff;
+}
+
+.button-secondary {
+  background-color: #28a745;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-bg {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.service-card,
+.project-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+.service-card i {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.neon-glow {
+  box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff,
+    0 0 40px #007bff;
+}
+
+.service-card:hover,
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card .card-img-top {
+  height: 200px;
+  object-fit: contain;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.project-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+#about img {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+#skills {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.skill-logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-logo-item {
+  flex: 0 0 calc(16.666% - 20px);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-logo {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.contact-info {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #007bff;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #0056b3;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.footer-link {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline:before {
+  content: " ";
+  background: #007bff;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 100%;
+}
+
+.timeline li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline li:before {
+  content: " ";
+  background: #007bff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  left: -36px;
+  width: 10px;
+  height: 10px;
+  margin-top: 5px;
+}
+
+#about,
+#skills,
+#contact {
+  background: url("img/WhatsApp\ Image\ 2024-10-18\ at\ 19.27.32.jpeg")
+    no-repeat center center/cover;
+  position: relative;
+}
+
+#about::before,
+#services::before,
+#skills::before,
+#projects::before,
+#contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .skill-logo-item {
+    flex: 0 0 calc(25% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .skill-logo-item {
+    flex: 0 0 calc(33.333% - 20px);
+  }
+
+  .skill-logo {
+    max-height: 60px;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline li:before {
+    left: -26px;
+  }
+
+  .project-card .card-img-top {
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skill-logo-item {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
